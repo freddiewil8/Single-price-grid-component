@@ -1,5 +1,8 @@
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.23, autoprefixer: v9.7.3) */
+
   *{
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
   }
   body {
     margin: 0;
@@ -18,7 +21,6 @@
     font-weight: 700;
     margin: 0 0 24px 0;
   }
-
   h2 {
     font-size: 18px;
     font-weight: 700;
@@ -28,12 +30,10 @@
   .main h2 {
     color: hsl(71, 73%, 54%);
   }
-
   .half h2 {
     color: white;
     margin-bottom: 18px;
   }
-
   ul {
     list-style-type: none;
     padding: 0;
@@ -45,17 +45,13 @@
     font-size: 14px;
     line-height: 20px;
   }
-
   span {
     display: block;
     font-size: 32px;
     font-weight: 700;
     color: white;
     margin: 0 14px 0 0;
-    padding: margin: 0 0 16px 0;
-
   }
-
   button {
     background-color: hsl(71, 73%, 54%);
     border: none;
@@ -70,25 +66,33 @@
     font-weight: 700;
     border-radius: 8px;
 }
-
   .attribution { font-size: 11px; text-align: center; }
   .attribution a { color: hsl(228, 45%, 44%); }
   .centering {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     height: 100vh;
   }
-  
   .wrapper {
     width: 636px;
     margin: 0 auto;
     border-radius: 5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
-
   .main {
     background-color: white;
     width: 100%;
@@ -96,38 +100,35 @@
     border-top-right-radius: 8px;
     border-top-left-radius: 8px;
   }
-
   .half {
     width: 50%;
     padding: 40px 39px;
   }
-
   .left {
     background-color: hsl(179, 62%, 43%);
     border-bottom-left-radius: 8px;
   }
-
   .right {
     background-color: #33cccc;
     border-bottom-right-radius: 8px;
   }
-
   .left p {
     color: white;
   }
-
   .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding: 0;
     margin-bottom: 15px;
   }
-
   .container p {
     height: auto;
     margin: 0;
   }
-
 @media all and (max-width:634px) {
   .wrapper{
     width: 375px;
@@ -140,5 +141,8 @@
   }
   .right {
     border-bottom-left-radius: 8px;
+  }
+  .centering {
+    align-items: flex-start;
   }
 }
