@@ -4,103 +4,50 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-
+  <link href="https://fonts.googleapis.com/css?family=Karla:400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="master.css">
   <title>Frontend Mentor | Single Price Grid Component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    *{
-      box-sizing: border-box;
-    }
-    body {
-      margin: 0;
-      color: white;
-    }
-    p {
-      color: hsl(218, 22%, 67%);
-    }
-    h1 {
-      color: hsl(179, 62%, 43%);
-    }
-    h2 {
-      color: hsl(71, 73%, 54%);
-    }
-    h3 {
-
-    }
-    ul {
-
-    }
-    li {
-      color: hsl(204, 43%, 93%);
-    }
-
-    button {
-      color: hsl(71, 73%, 54%);
-    }
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-    .wrapper {
-      width: 635px;
-      border-radius: 5px;
-      display: flex;
-    }
-    .main {
-      background-color: white;
-    }
-    .half {
-      width: 50%;
-    }
-    .left {
-      background-color: hsl(179, 62%, 43%);
-    }
-    .right {
-      background-color: hsl(179, 62%, 40%);
-    }
-  </style>
 </head>
-
 <body>
-  <div class="wrapper">
-    <div class="main">
-      <h1>Join our community</h1>
-
-      <h2>30-day, hassle-free money back guarantee</h2>
-
-      <p>Gain access to our full library of tutorials along with expert code reviews.
-        Perfect for any developers who are serious about honing their skills.
-      </p>
-    </div>
-    <div class="half left">
-      <h3>Monthly Subscription</h3>
-
-      <p><span>&dollar;29</span> per month</p>
-
-      <p>Full access for less than &dollar;1 a day</p>
-
-      <button type="button" name="button">Sign Up</button>
-    </div>
-    <div class="half right">
-      <h3>Why Us</h3>
-      <ul>
-        <li>Tutorials by industry experts</li>
-        <li>Peer &amp; expert code review</li>
-        <li>Coding exercises</li>
-        <li>Access to our GitHub repos</li>
-        <li>Community forum</li>
-        <li>Flashcard decks</li>
-        <li>New videos every week</li>
-      </ul>
-    </div>
-  </div>
+  <div class="centering">
+    <div class="wrapper">
+      <div class="main">
+        <h1>Join our community</h1>
+        <h2>30-day, hassle-free money back guarantee</h2>
+        <p>Gain access to our full library of tutorials along with expert code reviews.
+          Perfect for any developers who are serious about honing their skills.
+        </p>
+      </div>
+      <div class="half left">
+        <h2>Monthly Subscription</h2>
+        <div class="container">
+          <span>&dollar;29</span>
+          <p>per month</p>
+        </div>
+        <p>Full access for less than &dollar;1 a day</p>
+        <button type="button" name="button">Sign Up</button>
+      </div>
+      <div class="half right">
+        <h2>Why Us</h2>
+        <ul>
+          <li>Tutorials by industry experts</li>
+          <li>Peer &amp; expert code review</li>
+          <li>Coding exercises</li>
+          <li>Access to our GitHub repos</li>
+          <li>Community forum</li>
+          <li>Flashcard decks</li>
+          <li>New videos every week</li>
+        </ul>
+      </div>
   <footer>
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
       Coded by <a href="#">Freddie</a>.
     </p>
   </footer>
+</div>
+</div>
 </body>
 
 </html>
