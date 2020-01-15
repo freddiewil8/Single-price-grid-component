@@ -6,32 +6,36 @@
   }
   body {
     margin: 0;
-    background-color: hsl(204, 43%, 93%);
     font-family: 'Karla', sans-serif;
+    color: white;
   }
   p {
-    color: hsl(218, 22%, 67%);
     font-size: 16px;
     margin: 0;
     line-height: 24px;
+    font-weight: 400;
   }
   h1 {
-    color: hsl(179, 62%, 43%);
     font-size: 24px;
     font-weight: 700;
     margin: 0 0 24px 0;
   }
+
   h2 {
     font-size: 18px;
     font-weight: 700;
     padding: 0;
-    margin: 0 0 14px 0;
+    margin: 0 0 12px 0;
   }
-  .main h2 {
-    color: hsl(71, 73%, 54%);
+
+  h3 {
+    font-size: 18px;
+    font-weight: 700;
+    padding: 0;
+    margin: 0 0 12px 0;
   }
+
   .half h2 {
-    color: white;
     margin-bottom: 18px;
   }
   ul {
@@ -40,32 +44,52 @@
     margin: 0;
   }
   li {
-    color: hsl(204, 43%, 93%);
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
   }
   span {
     display: block;
-    font-size: 32px;
+    font-size: 31px;
     font-weight: 700;
-    color: white;
     margin: 0 14px 0 0;
   }
+
   button {
     background-color: hsl(71, 73%, 54%);
     border: none;
-    color: white;
     padding: 15px 32px;
-    margin-top: 16px;
+    margin-top: 28px;
     width: 100%;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 700;
-    border-radius: 8px;
+    border-radius: 3px;
+    color: white;
 }
+
+  .cyan-font {
+    color: hsl(179, 62%, 43%);
+  }
+
+  .cyan-background {
+    background-color: hsl(179, 62%, 43%);
+  }
+
+  .bright-yellow-font {
+    color: hsl(71, 73%, 54%);
+  }
+
+  .light-gray-background {
+    background-color: hsl(204, 43%, 93%);
+  }
+
+  .grayish-blue-font {
+    color: hsl(218, 22%, 67%);
+    }
+
   .attribution { font-size: 11px; text-align: center; }
   .attribution a { color: hsl(228, 45%, 44%); }
   .centering {
@@ -105,16 +129,13 @@
     padding: 40px 39px;
   }
   .left {
-    background-color: hsl(179, 62%, 43%);
     border-bottom-left-radius: 8px;
   }
   .right {
     background-color: #33cccc;
     border-bottom-right-radius: 8px;
   }
-  .left p {
-    color: white;
-  }
+
   .container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -123,26 +144,51 @@
         -ms-flex-align: center;
             align-items: center;
     padding: 0;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
   }
   .container p {
     height: auto;
     margin: 0;
   }
 @media all and (max-width:634px) {
+  p {
+    font-size: 14px;
+  }
+  h1 {
+    font-size: 20px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  h3 {
+    font-size: 16px;
+  }
   .wrapper{
-    width: 375px;
+    width: 312px;
+  }
+  .main {
+    padding: 24px;
   }
   .half {
     width: 100%;
   }
   .left {
     border-bottom-left-radius: 0;
+    padding: 24px;
   }
   .right {
     border-bottom-left-radius: 8px;
+    padding: 24px;
   }
   .centering {
     align-items: flex-start;
+  }
+  .heading-padding {
+    padding-top: 4px;
+  }
+  .paragraph-padding {
+    padding: 9px 0 16px 0;
   }
 }
